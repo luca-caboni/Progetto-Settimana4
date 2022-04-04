@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/scss/stile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"> 
+    <title>Calcolatrice usando JS</title>
+</head>
+<body>
+    <section>
+        <h1>Calcolatrice usando JavaScript</h1>
+        <div class="container">
+            <div><input type="text" id="display"></div>
+            <div class="buttons">
+                <div class="button" onclick="aggiornaOperazione(7)">7</div>
+                <div class="button" onclick="aggiornaOperazione(8)">8</div>
+                <div class="button" onclick="aggiornaOperazione(9)">9</div>
+                <div class="button" onclick="aggiornaOperazione('/')">/</div>
+                <div class="button" onclick="aggiornaOperazione(4)">4</div>
+                <div class="button" onclick="aggiornaOperazione(5)">5</div>
+                <div class="button" onclick="aggiornaOperazione(6)">6</div>
+                <div class="button" onclick="aggiornaOperazione('*')">X</div>
+                <div class="button" onclick="aggiornaOperazione(1)">1</div>
+                <div class="button" onclick="aggiornaOperazione(2)">2</div>
+                <div class="button" onclick="aggiornaOperazione(3)">3</div>
+                <div class="button" onclick="aggiornaOperazione('-')">-</div>
+                <div class="button" onclick="cancellaOperazione()">C</div>
+                <div class="button" onclick="aggiornaOperazione(0)">0</div>
+                <div class="button" onclick="aggiornaOperazione('.')">.</div>
+                <div class="button" onclick="aggiornaOperazione('+')">+</div>
+                <div id="equal" class="button" onclick="calcolaRisultato()">=</div>
+            </div>
+        </div>
+    </section>
+    <script src="/assets/js/script_eval.js"></script>
+</body>
+</html>
